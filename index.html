@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <title>Acceso Privado 🤍</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Caveat:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="hearts-bg" class="hearts-bg" aria-hidden="true"></div>
+
+  <div id="access-gate" class="access-gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+    <div class="access-gate-card">
+      <div class="gate-seal">🤍</div>
+      <span class="gate-eyebrow">CONTENIDO CIFRADO</span>
+      <h2 id="gate-title" class="gate-title">Espacio Privado</h2>
+      <p class="gate-desc">
+        Introduce nuestra fecha especial para desbloquear y abrir el contenido:
+      </p>
+      <form id="gate-form" class="gate-form" autocomplete="off">
+        <input
+          type="text"
+          id="gate-input"
+          class="gate-input"
+          placeholder="DD/MM/AAAA"
+          aria-label="Fecha especial"
+        />
+        <button type="submit" class="gate-btn" id="gate-submit-btn">
+          Desbloquear 🤍
+        </button>
+        <p id="gate-error" class="gate-error hidden">
+          Fecha incorrecta. Pista: el día que empezó todo (DD/MM/AAAA) 🤍
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <div id="app-root"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="loader.js"></script>
+</body>
+</html>
